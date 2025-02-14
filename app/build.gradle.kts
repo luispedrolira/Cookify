@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.luispedrolira.cookify"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.luispedrolira.cookify"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -64,7 +64,8 @@ dependencies {
     implementation(libs.compose.ui)
     implementation(libs.compose.material3)
     implementation(libs.compose.ui.tooling.preview)
-    debugImplementation(libs.compose.ui.tooling)
+    implementation(libs.androidx.icons.extended)
+
 
     // Navigation
     implementation(libs.navigation.compose)
